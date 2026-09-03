@@ -1,0 +1,82 @@
+{
+	"modName": "BakaPowerArmorHUD",
+	"displayName": "Baka Power Armor HUD",
+	"content": [
+		{
+			"type": "image",
+			"libName": "BakaPowerArmorHUD",
+			"className": "header",
+			"width": 770,
+			"height": 450
+		}
+	],
+	"pages": [
+		{
+			"pageDisplayName": "General",
+			"content": [
+				{
+					"type": "section",
+					"text": "Settings"
+				},
+				{
+					"type": "switcher",
+					"text": "Disable Power Armor HUD",
+					"help": "Disable the Power Armor HUD, falling back to the standard HUD and the Power Armor Battery Meter.",
+					"valueOptions": {
+						"sourceType": "ModSettingBool"
+					},
+					"id": "bEnable:General"
+				},
+				{
+					"type": "switcher",
+					"text": "Disable Power Armor HUD Color",
+					"help": "Replace the Power Armor HUD color with the chosen HUD color in the game's settings.",
+					"valueOptions": {
+						"sourceType": "ModSettingBool"
+					},
+					"id": "bDisablePAColor:General"
+				},
+				{
+					"type": "section",
+					"text": "Battery Meter Position"
+				},
+				{
+					"type": "slider",
+					"text": "Power Armor Battery Meter X",
+					"help": "The X position of the Power Armor Battery Meter, relative to a 720p screen.",
+					"valueOptions": {
+						"min": -200.0,
+						"max": 1000.0,
+						"step": 1.0,
+						"sourceType": "ModSettingFloat"
+					},
+					"id": "fConditionMeterX:General"
+				},
+				{
+					"type": "slider",
+					"text": "Power Armor Battery Meter Y",
+					"help": "The Y position of the Power Armor Battery Meter, relative to a 720p screen.",
+					"valueOptions": {
+						"min": -200.0,
+						"max": 1000.0,
+						"step": 1.0,
+						"sourceType": "ModSettingFloat"
+					},
+					"id": "fConditionMeterY:General"
+				},
+				{
+					"type": "slider",
+					"text": "Power Armor Battery Meter Scale",
+					"help": "The size of the Power Armor Battery Meter on screen.",
+					"valueOptions": {
+						"min": 0.0,
+						"max": 10.0,
+						"step": 0.1,
+						"sourceType": "ModSettingFloat"
+					},
+					"id": "fConditionMeterScale:General"
+				}
+			]
+		}
+	]
+}
